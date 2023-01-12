@@ -1,34 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:ubis_app/models/option.dart';
 
 class OptionItem extends StatelessWidget {
-  final String id;
-  final String title;
-  final IconData icon;
+  final Option optionModel;
 
-  OptionItem(this.id, this.title, this.icon);
+  OptionItem(this.optionModel);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: null,
+      onTap: () {
+        Navigator.of(context).pushNamed(optionModel.path);
+      },
       splashColor: Colors.amber,
       borderRadius: BorderRadius.circular(15),
       child: Container(
         padding: const EdgeInsets.all(15),
-        child: Row(
-          children: [
-            Text(
-              title,
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            Icon(icon),
-          ],
-        ),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
             colors: <Color>[
               Color.fromARGB(255, 160, 160, 160),
               Color.fromARGB(255, 224, 224, 224),
@@ -37,6 +26,18 @@ class OptionItem extends StatelessWidget {
             end: Alignment.bottomRight,
           ),
           borderRadius: BorderRadius.circular(15),
+        ),
+        child: Row(
+          children: [
+            Text(
+              style: const TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),
+              optionModel.title,
+            ),
+            Icon(optionModel.icon),
+          ],
         ),
       ),
     );

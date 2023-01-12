@@ -18,13 +18,7 @@ class OptionScreen extends StatelessWidget {
       drawer: MainDrawer(),
       body: GridView(
         padding: const EdgeInsets.all(15),
-        children: OPTIAN_DATA
-            .map((opData) => OptionItem(
-                  opData.id,
-                  opData.title,
-                  opData.icon,
-                ))
-            .toList(),
+        children: OPTIAN_DATA.map((opData) => OptionItem(opData)).toList(),
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200, //* width
           childAspectRatio: 3 / 2, //* heigt in width e oranı
