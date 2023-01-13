@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 //page imports
 import "./screens/login_screen.dart";
 import './screens/options_screen.dart';
-import './screens/courses_screen.dart';
-import './screens/absenteeism_screen.dart';
-import './screens/announcements_screen.dart';
-import './screens/course_notes_screen.dart';
-import './screens/exam_result_screen.dart';
-import './screens/exam_schedule_screen.dart';
-import './screens/homeworks_screen.dart';
+import './screens/option_screens/courses_screen.dart';
+import './screens/option_screens/absenteeism_screen.dart';
+import './screens/option_screens/announcements_screen.dart';
+import './screens/option_screens/course_notes_screen.dart';
+import './screens/option_screens/exam_result_screen.dart';
+import './screens/option_screens/exam_schedule_screen.dart';
+import './screens/option_screens/homeworks_screen.dart';
 import './screens/profile_screen.dart';
 import './screens/settings_screen.dart';
-import './screens/syllabus_screen.dart';
-import './screens/transcript_screen.dart';
+import './screens/option_screens/syllabus_screen.dart';
+import './screens/option_screens/transcript_screen.dart';
 
 void main() => runApp(MyApp());
 

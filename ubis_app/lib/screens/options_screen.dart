@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //page imports
-import '../option_data.dart';
+import '../fake_data.dart';
 import '../widgets/option_item.dart';
 import '../widgets/main_drawer.dart';
 

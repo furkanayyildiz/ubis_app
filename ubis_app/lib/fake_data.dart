@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 // page imports
 import './models/option.dart';
+import './models/course.dart';
 
 const OPTIAN_DATA = [
   Option(
@@ -53,5 +54,43 @@ const OPTIAN_DATA = [
     title: "Transcript",
     icon: Icons.grade,
     path: "/transcript_screen",
+  ),
+];
+
+const OPTION_DATA = [
+  Course(
+    code: "SEN431",
+    name: "DATA MINING",
+    lecturer: "DR. ATINC YILMAZ",
+    akts: 4,
+    credit: 3,
+  ),
+  Course(
+    code: "SEN417",
+    name: "MOBILE APPLICATION",
+    lecturer: "PROF.DR. ALI OKATAN",
+    akts: 4,
+    credit: 3,
+  ),
+  Course(
+    code: "SEN413",
+    name: "GRADUATION PROJECT",
+    lecturer: "DOC.DR.YAKUP CELIKBILEK",
+    akts: 3,
+    credit: 3,
+  ),
+  Course(
+    code: "SEN441",
+    name: "SOFTWARE TESTING",
+    lecturer: "DOC.DR. ILHAN HUSEYINOV",
+    akts: 4,
+    credit: 3,
+  ),
+  Course(
+    code: "SEN437",
+    name: "MACHINE LEARNING",
+    lecturer: "PROF.DR.ALI OKATAN",
+    akts: 4,
+    credit: 3,
   ),
 ];
