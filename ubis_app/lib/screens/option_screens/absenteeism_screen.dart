@@ -5,12 +5,9 @@ class AbsenteeismScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Absenteeism"),
-        backgroundColor: Theme.of(context).primaryColor,
+        title: Text("sfdsgsghshf"),
       ),
-      body: Container(
-        child: Text(" Absenteeism Screen"),
-      ),
+      body: Container(),
     );
   }
 }

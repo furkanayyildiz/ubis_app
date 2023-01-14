@@ -57,7 +57,7 @@ const OPTIAN_DATA = [
   ),
 ];
 
-const OPTION_DATA = [
+const COURSE_DATA = [
   Course(
     code: "SEN431",
     name: "DATA MINING",

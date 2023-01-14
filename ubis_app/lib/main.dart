@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ubis_app/screens/option_screens/course_detail_screen.dart';
 
 //page imports
 import "./screens/login_screen.dart";
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         "/homeworks_screen": (context) => HoneworksScreen(),
         "/syllabus_screen": (context) => SyllabusScreen(),
         "/transcript_screen": (context) => TranscriptScreen(),
+        CourseDetailScreen.routeName: (context) => CourseDetailScreen(),
       },
     );
   }
