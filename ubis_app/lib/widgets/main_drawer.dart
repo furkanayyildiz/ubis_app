@@ -69,11 +69,10 @@ class _MainDrawer extends State<MainDrawer> {
           buildDrawerItem("Profile", Icons.account_circle, () {
             Navigator.of(context).pushNamed("/profile_screen");
           }),
+          buildDrawerItem("Library", Icons.library_books_outlined, () {}),
+          buildDrawerItem("Financial Information", Icons.money, () {}),
           buildDrawerItem("Settings", Icons.settings, () {
             Navigator.of(context).pushNamed(SettingsScreen.routeName);
-          }),
-          buildDrawerItem("Financial Information", Icons.money, () {
-            Navigator.of(context).pushNamed("/profile_screen");
           }),
           buildDrawerItem("Exit", Icons.exit_to_app, () {
             Navigator.of(context).pushNamed("/");

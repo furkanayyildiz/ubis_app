@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ubis_app/screens/option_screens/course_detail_screen.dart';
+import 'package:ubis_app/screens/option_screens/exam_result_detail_screen.dart';
 
 //page imports
 import "./screens/login_screen.dart";
@@ -10,11 +11,11 @@ import './screens/option_screens/announcements_screen.dart';
 import './screens/option_screens/course_notes_screen.dart';
 import './screens/option_screens/exam_result_screen.dart';
 import './screens/option_screens/exam_schedule_screen.dart';
-import './screens/option_screens/homeworks_screen.dart';
 import './screens/profile_screen.dart';
 import './screens/settings_screen.dart';
 import './screens/option_screens/syllabus_screen.dart';
 import './screens/option_screens/transcript_screen.dart';
+import "./screens/option_screens/exam_result_detail_screen.dart";
 
 void main() => runApp(MyApp());
 
@@ -38,10 +39,10 @@ class MyApp extends StatelessWidget {
         "/course_notes_screen": (context) => CourseNotesScreen(),
         "/exam_schedule": (context) => ExamScheduleScreen(),
         "/exam_result_screen": (context) => ExamResultScreen(),
-        "/homeworks_screen": (context) => HoneworksScreen(),
         "/syllabus_screen": (context) => SyllabusScreen(),
         "/transcript_screen": (context) => TranscriptScreen(),
         CourseDetailScreen.routeName: (context) => CourseDetailScreen(),
+        ExamResultDetailScreen.routeName: (context) => ExamResultDetailScreen(),
       },
     );
   }

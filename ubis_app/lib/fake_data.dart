@@ -39,12 +39,6 @@ const OPTIAN_DATA = [
       icon: Icons.quiz,
       path: "/exam_result_screen"),
   Option(
-    id: "o7",
-    title: "Homeworks",
-    icon: Icons.note,
-    path: "/homeworks_screen",
-  ),
-  Option(
       id: "o8",
       title: "Syllabus",
       icon: Icons.calendar_month_outlined,
